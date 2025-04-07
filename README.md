@@ -27,3 +27,8 @@ npm install https://github.com/LowGas-Jun/ton-load.git
 ```bash
 git clone https://github.com/LowGas-Jun/ton-load.git
 ```
+
+## Examples
+```typescript
+import { PayloadConstructor } from "ton-load";
+```
