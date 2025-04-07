@@ -48,7 +48,7 @@ console.log(PayloadConstructor.createGasPumpSell({
 ```
 
 ## Usage
-```javascript
+```html
 <script>
 //TonFun buy action
 import { useTonConnect } from '@/utils/ton-connect'
