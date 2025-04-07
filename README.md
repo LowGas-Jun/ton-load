@@ -4,7 +4,7 @@
 Simplest actions(transaction) builder for interact with TON smart-contracts, try and use in your project!
 
 You can interact with DEX, Memepad and TON basic actions:
-1. DEX
+1. DEX (DeDust/Ston.fi)
     - SWAP assetes to another token.
     - Buy action TON to DUST.
     - Sell action DUST to TON.
