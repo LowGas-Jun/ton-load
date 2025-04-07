@@ -1,0 +1,17 @@
+{
+  "name": "ton-load",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [],
+  "author": "LowGas",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@ton/ton": "^15.2.1"
+  }
+}
