@@ -46,3 +46,30 @@ console.log(PayloadConstructor.createGasPumpSell({
 
 //output: te6cckEBAQEANQAAZllfB7wAAAAAAAAAAF6NSlEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEC4kNY=
 ```
+
+## Usage
+```javascript
+<script>
+//TonFun buy action
+import { useTonConnect } from '@/utils/ton-connect'
+import { PayloadConstructor } from "ton-load";
+
+const connect = useTonConnect()
+const payload = PayloadConstructor.createTonFunBuy({
+    to: connect.wallet?.account?.address, //Address of connected wallet
+    amount: 0 //Slippage, default 0
+})
+const transaction = {
+    validUntil: Math.floor(Date.now() / 1000) + 60,
+    messages: [
+        {
+            address: jetton_master, //Jetton Master Address
+            amount: String(5 * 10**9), //Amount of TON to buy
+            payload: payload
+        }
+    ]
+}
+
+connect.sendTransaction(transaction)
+</script>
+```
