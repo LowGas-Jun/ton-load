@@ -17,3 +17,13 @@ Simplest actions(transaction) builder for interact with TON smart-contracts, try
     - Simple Jetton Transfer.
     - Jetton Burn operation.
     - Simple NFT Trasnsfer.
+
+## Installation
+```bash
+npm install https://github.com/LowGas-Jun/ton-load.git
+```
+
+## Clone
+```bash
+git clone https://github.com/LowGas-Jun/ton-load.git
+```
