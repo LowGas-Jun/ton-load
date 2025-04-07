@@ -31,4 +31,11 @@ git clone https://github.com/LowGas-Jun/ton-load.git
 ## Examples
 ```typescript
 import { PayloadConstructor } from "ton-load";
+
+console.log(PayloadConstructor.createJettonTransfer({
+    amount: 10,
+    to: 'UQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJKZ'
+}))
+
+//output: te6cckEBAQEAWgAAsA+KfqUAAAAAAAAAAFAlQL5ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYPQkGCcNRE
 ```
